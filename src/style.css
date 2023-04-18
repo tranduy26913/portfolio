@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    color-scheme: light dark;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+    /* -webkit-font-smoothing: antialiased; */
+    color: linear-gradient(-45deg, #646cff, #42B883);
+}
+
+:root .dark {
+    --neumor-color-1: '#333';
+    --neumor-color-2: '#111';
+}
+
+html {
+    --neumor-color-1: '#8c8e8f';
+    --neumor-color-2: '#ffffff';
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+    min-width: 460px;
+}
+
+a {
+    color: #dbc531;
+    color: #42B883;
+    text-decoration: inherit;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@layer utilities {
+    .animation-delay-100 {
+        animation-delay: 100ms;
+    }
+    .animation-delay-200 {
+        animation-delay: 200ms;
+    }
+    .animation-delay-300 {
+        animation-delay: 300ms;
+    }
+}
+
+@layer components {
+    .neumorphism-shadow {
+        @apply text-lg font-bold text-gray-900;
+    }
+    .gradientText {
+        @apply inline-block bg-gradient-to-r from-green to-blue-800 bg-clip-text text-transparent
+    }
+}
