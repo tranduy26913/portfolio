@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="tsS">
 import { ref } from 'vue'
     const listSkill = [
         {
