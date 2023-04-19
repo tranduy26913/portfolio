@@ -20,9 +20,7 @@ const list = [
     },
 ]
 
-const themeDark = ref(localStorage.theme === 'dark' ||
-    (!('theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches))
+const themeDark = ref(localStorage.theme === 'dark')
 const handleChange = () => {
     console.log(themeDark.value)
     //themeDark.value != themeDark.value
@@ -33,6 +31,8 @@ const handleChange = () => {
 
     localStorage.setItem('theme', themeDark.value ? 'dark' : 'light')
 }
+
+console.log(themeDark.value)
 
 
 
