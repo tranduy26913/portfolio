@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+import { listContact } from '../mock/contacts'
+const choose = ref(-1)
+const onChoose = (index: number) => {
+    if (choose.value === index)
+        choose.value = -1
+    else
+        choose.value = index
+}
+</script>
 <template>
     <section class="dark:text-dark dark:bg-dark">
         <article class="flex p-4 flex-col md:flex-row md:items-center gap-10 md:gap-1">
@@ -8,46 +19,43 @@
                     <br />
                     a
                     <div class="gradientText relative inline-flex animate-typewriter overflow-hidden
-                     border-r-4 border-r-blue-500 whitespace-nowrap tracking-widest
-                    ">
-                       <span class="">Developer</span> 
+                             border-r-4 border-r-blue-500 whitespace-nowrap tracking-widest
+                            ">
+                        <span class="">Developer</span>
                     </div>
                 </h1>
-                <p class="pr-20"> 
-                    With a strength about web developer, I'm looking for Frontend developer positions in website. I'll be using the technical and problem-solving I've developed via studies and work. 
-</p>
-                <div>
-                    <p class="font-medium">CONTACT ME</p>
-                    <ul class="flex gap-6 mt-2 group">
-                        <li class="w-16 h-16 shadow-neumor rounded-md flex text-[#213454] hover:scale-[1.03]  dark:shadow-neumor-dark">
-                            <a href="https://www.facebook.com/Tduyyyyyyyy"
-                            class="text-[#213454] m-auto dark:text-[#4d86db]">
-                                <i class="fa-brands fa-facebook text-[2.5rem]"></i>
-                            </a>
-                        </li>
-                        <li class="w-16 h-16 shadow-neumor rounded-md flex hover:scale-[1.03] dark:shadow-neumor-dark">
-                            <a href="https://github.com/tranduy26913"
-                            class="text-[#000] m-auto dark:text-[#fff]">
-                                <i class="fa-brands fa-github text-[2.5rem]"></i>
-                            </a>
-                        </li>
-                        <li class="w-16 h-16 shadow-neumor rounded-md flex  hover:scale-[1.03] dark:shadow-neumor-dark">
-                            <a href="https://www.linkedin.com/in/tranbaoduy4"
-                            class="text-[#213454] m-auto dark:text-[#4a5eb8]">
-                                <i class="fa-brands fa-linkedin text-[2.5rem]"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <p class="pr-20">
+                    I am a final-year student at HCMC University of Technology and Education. With a strength about web
+                    developer, I'm looking for Frontend developer positions in website. I'll be using the technical and
+                    problem-solving I've developed via studies and work.
+                </p>
+
 
             </div>
             <div class="flex-1 order-1 md:order-2">
-                <img src="../assets/avt.jpg" class="w-1/2 m-auto md:w-full rounded-full shadow-neumor dark:shadow-neumor-dark" />
+                <img src="../assets/avt.jpg"
+                    class="w-1/2 m-auto md:w-full rounded-full shadow-neumor dark:shadow-neumor-dark" />
             </div>
         </article>
+        <div>
+            <p class="font-medium">CONTACT WITH ME</p>
+            <ul class="flex justify-center flex-wrap gap-6 mt-2 w-full">
+                <li v-for="(contact, index) in listContact" @click="onChoose(index)" 
+                class="group h-12 w-12 sm:w-[272px] shadow-neumor rounded-[32px] flex items-center 
+                                    gap-3 px-2 hover:scale-[1.03] dark:shadow-neumor-dark"
+                    :class="[`${choose === index ? 'w-fit' : 'w-12'}`]">
+                    <i class="text-[1.75rem] m-auto sm:m-0" :class="[contact.icon, contact.class]"></i>
+                    <a v-if="contact.link" target="_blank" :href="contact.link"
+                        class="text-[#333] dark:text-[#fff] hidden sm:block"
+                        :class="[`${index === choose ? '!block' : ''}`]">
+                        {{ contact.content }}
+                    </a>
+                    <p v-else :class="[`${index === choose ? '!block' : ''}`]"
+                        class="text-[#333] hidden sm:block dark:text-[#fff]">{{ contact.content }}</p>
+                </li>
+            </ul>
+        </div>
     </section>
 </template>
 
-<style>
-
-</style>
+<style></style>

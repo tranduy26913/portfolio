@@ -11,12 +11,12 @@ const list = [
         url: '/#about'
     },
     {
-        title: 'SKILLS',
-        url: '/#skills'
+        title: 'SKILL',
+        url: '/#skill'
     },
     {
-        title: 'PROEJECTS',
-        url: '/#projects'
+        title: 'PROJECT',
+        url: '/#project'
     },
 ]
 

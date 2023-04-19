@@ -4,6 +4,7 @@ import Footer from '../components/Footer.vue'
 import About from '../components/About.vue'
 import Skill from '../components/Skill.vue'
 import Project from '../components/Project.vue'
+import ScrollToTop from '../components/ScrollToTop.vue'
 </script>
 
 <template>
@@ -15,4 +16,5 @@ import Project from '../components/Project.vue'
         <Project></Project>
         <Footer></Footer>
     </main>
+    <ScrollToTop></ScrollToTop>
 </template>
