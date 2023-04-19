@@ -39,10 +39,10 @@ const onChoose = (index: number) => {
         </article>
         <div class=" p-4">
             <p class="font-medium">CONTACT WITH ME</p>
-            <ul class="flex justify-center flex-wrap gap-6 mt-5 w-full lg:grid lg:grid-cols-3 xl:grid-cols-4">
+            <ul class="flex justify-center flex-wrap gap-6 mt-5 w-full xl:px-20">
                 <li v-for="(contact, index) in listContact" @click="onChoose(index)" 
                 class="group h-12 w-12 sm:w-[280px] shadow-neumor rounded-[32px] flex items-center 
-                lg:mx-auto gap-3 px-3 hover:scale-[1.03] dark:shadow-neumor-dark"
+                lg:mx-auto gap-3 px-[10px] hover:scale-[1.03] dark:shadow-neumor-dark "
                     :class="[`${choose === index ? 'w-fit' : 'w-12'}`]">
                     <i class="text-[1.75rem] m-auto sm:m-0" :class="[contact.icon, contact.class]"></i>
                     <a v-if="contact.link" target="_blank" :href="contact.link"
