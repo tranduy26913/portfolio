@@ -1,3 +1,5 @@
+import mernStack from '../assets/oes/mern.png'
+
 export const listProject = [
     {
         id: 1,
@@ -10,7 +12,7 @@ export const listProject = [
         tech: [
             {
                 name: 'MERN Stack',
-                img: '/src/assets/oes/mern.png'
+                img: mernStack
             },
             {
                 name: 'Redux Toolkit',
