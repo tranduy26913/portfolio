@@ -47,7 +47,7 @@ export const listProject = [
         tech: [
             {
                 name: 'MERN Stack',
-                img: '/src/assets/oes/mern.png'
+                img: 'assets/oes/mern.png'
             },
             {
                 name: 'Typescript',
@@ -59,21 +59,21 @@ export const listProject = [
             },
             {
                 name: 'React Query',
-                img: '/src/assets/novel/zustand.svg'
+                img: '/assets/novel/zustand.svg'
             }],
         imgs: [
             {
                 name: 'Home',
-                img: '/src/assets/oes/thumb.png'
+                img: '/assets/oes/thumb.png'
             },
             {
                 name: 'Redux Toolkit',
-                img: '/src/assets/oes/redux.webp'
+                img: '/assets/oes/redux.webp'
             },
 
             {
                 name: 'MaterialUI',
-                img: '/src/assets/oes/mui.png'
+                img: '/assets/oes/mui.png'
             }],
     },
     {
@@ -111,7 +111,7 @@ export const listProject = [
     },
     {
         id: 3,
-        name: 'Library Management',
+        name: '',
         thumbnail: '/src/assets/library/thumb.jpg',
         description: 'The story website provides a collection of stories for everyone. Users can upload stories to the website to share with other users.',
         numberOfMember: 1,
