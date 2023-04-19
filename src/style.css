@@ -5,14 +5,10 @@
 :root {
     color-scheme: light dark;
     color: rgba(0, 0, 0, 0.87);
-    background-color: #f5f5f5;
+    background-color: #f1f1f1;
+    scroll-behavior: smooth;
     /* -webkit-font-smoothing: antialiased; */
     color: linear-gradient(-45deg, #646cff, #42B883);
-}
-
-:root .dark {
-    --neumor-color-1: '#333';
-    --neumor-color-2: '#111';
 }
 
 html {
@@ -38,8 +34,7 @@ html {
 }
 
 a {
-    color: #dbc531;
-    color: #42B883;
+    color: #2faf6f;
     text-decoration: inherit;
 }
 
