@@ -39,7 +39,7 @@ export const listProject = [
     {
         id: 2,
         name: 'Light Novel Website',
-        thumbnail: '/src/assets/novel/thumb.jpg',
+        thumbnail: '/assets/thumb.jpg',
         description: 'The story website provides a collection of stories for everyone. Users can upload stories to the website to share with other users.',
         numberOfMember: 1,
         src: 'https://github.com/tranduy26913/DoAnHDT_WebDocTruyenChu',
