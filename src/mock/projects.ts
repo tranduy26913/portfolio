@@ -1,10 +1,18 @@
 import mernStack from '../assets/oes/mern.png'
+import redux from '../assets/oes/redux.webp'
+import mui from '../assets/oes/mui.png'
+import homeOES from '../assets/oes/thumb.png'
+import reactQuery from '../assets/novel/zustand.svg'
+import homeLib from '../assets/library/thumb.jpg'
+import mySQL from '../assets/library/mysql.png'
+import homeNovel from '../assets/novel/thumb.jpg'
+import java from '../assets/library/java.png'
 
 export const listProject = [
     {
         id: 1,
         name: 'Online Examination System',
-        thumbnail: '/src/assets/oes/thumb.png',
+        thumbnail: homeOES,
         description: 'Website to support the learning process for students and faculty. The site allows teachers to create courses, tests, assignments and lectures; Students participate in courses for tests and exercises that teachers use in the course.',
         numberOfMember: 1,
         src: 'https://github.com/tranduy26913/Online_Examination_System_ReactJS',
@@ -16,32 +24,32 @@ export const listProject = [
             },
             {
                 name: 'Redux Toolkit',
-                img: '/src/assets/oes/redux.webp'
+                img: redux
             },
 
             {
                 name: 'MaterialUI',
-                img: '/src/assets/oes/mui.png'
+                img: mui
             }],
         imgs: [
             {
                 name: 'Home',
-                img: '/src/assets/oes/thumb.png'
+                img: homeOES
             },
             {
                 name: 'Redux Toolkit',
-                img: '/src/assets/oes/redux.webp'
+                img: redux
             },
 
             {
                 name: 'MaterialUI',
-                img: '/src/assets/oes/mui.png'
+                img: mui
             }],
     },
     {
         id: 2,
         name: 'Light Novel Website',
-        thumbnail: '/assets/thumb.jpg',
+        thumbnail: homeNovel,
         description: 'The story website provides a collection of stories for everyone. Users can upload stories to the website to share with other users.',
         numberOfMember: 1,
         src: 'https://github.com/tranduy26913/DoAnHDT_WebDocTruyenChu',
@@ -49,7 +57,7 @@ export const listProject = [
         tech: [
             {
                 name: 'MERN Stack',
-                img: 'assets/oes/mern.png'
+                img: mernStack
             },
             {
                 name: 'Typescript',
@@ -61,27 +69,27 @@ export const listProject = [
             },
             {
                 name: 'React Query',
-                img: '/assets/novel/zustand.svg'
+                img: reactQuery
             }],
         imgs: [
             {
                 name: 'Home',
-                img: '/assets/oes/thumb.png'
+                img: homeNovel
             },
             {
                 name: 'Redux Toolkit',
-                img: '/assets/oes/redux.webp'
+                img: redux
             },
 
             {
                 name: 'MaterialUI',
-                img: '/assets/oes/mui.png'
+                img: mui
             }],
     },
     {
         id: 3,
         name: 'Library Management',
-        thumbnail: '/src/assets/library/thumb.jpg',
+        thumbnail: homeLib,
         description: 'The story website provides a collection of stories for everyone. Users can upload stories to the website to share with other users.',
         numberOfMember: 1,
         src: 'https://github.com/tranduy26913/DoAnHDT_WebDocTruyenChu',
@@ -89,67 +97,28 @@ export const listProject = [
         tech: [
             {
                 name: 'Java Swing',
-                img: '/src/assets/library/java.png'
+                img: java
             },
             {
                 name: 'MySQL',
-                img: '/src/assets/library/mysql.png'
+                img: mySQL
             },
             ],
         imgs: [
             {
                 name: 'Home',
-                img: '/src/assets/oes/thumb.png'
+                img: homeLib
             },
             {
                 name: 'Redux Toolkit',
-                img: '/src/assets/oes/redux.webp'
+                img: redux
             },
 
             {
                 name: 'MaterialUI',
-                img: '/src/assets/oes/mui.png'
+                img: mui
             }],
     },
-    {
-        id: 3,
-        name: '',
-        thumbnail: '/src/assets/library/thumb.jpg',
-        description: 'The story website provides a collection of stories for everyone. Users can upload stories to the website to share with other users.',
-        numberOfMember: 1,
-        src: 'https://github.com/tranduy26913/DoAnHDT_WebDocTruyenChu',
-        
-        tech: [
-            {
-                name: 'Java',
-                img: '/src/assets/library/java.png'
-            },
-            {
-                name: 'Typescript',
-                img: 'https://img.icons8.com/fluency/96/null/typescript--v1.png'
-            },
-            {
-                name: 'Zustand',
-                img: 'https://react-tracked.js.org/img/react-tracked-logo.svg'
-            },
-            {
-                name: 'React Query',
-                img: '/src/assets/novel/zustand.svg'
-            }],
-        imgs: [
-            {
-                name: 'Home',
-                img: '/src/assets/oes/thumb.png'
-            },
-            {
-                name: 'Redux Toolkit',
-                img: '/src/assets/oes/redux.webp'
-            },
-
-            {
-                name: 'MaterialUI',
-                img: '/src/assets/oes/mui.png'
-            }],
-    },
+    
 
 ]
