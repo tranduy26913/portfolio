@@ -16,13 +16,25 @@
 }
 
 html {
-    --neumor-color-1: '#8c8e8f';
-    --neumor-color-2: '#ffffff';
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
     min-width: 460px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #fff
+}
+
+::-webkit-scrollbar-track {
+    background-color: '#111'
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #34db7a;
+    border-radius: 3px
 }
 
 a {
@@ -71,9 +83,6 @@ button:focus-visible {
 }
 
 @layer components {
-    .neumorphism-shadow {
-        @apply text-lg font-bold text-gray-900;
-    }
     .gradientText {
         @apply inline-block bg-gradient-to-r from-green to-blue-800 bg-clip-text text-transparent
     }

@@ -40,7 +40,7 @@ const handleChange = () => {
 
 <template>
     <header class="header dark:bg-dark border-b  shadow-md dark:border-b-gray-400">
-        <div class="flex justify-between h-14 max-w-screen-xl mx-4 py-1 items-center">
+        <div class="flex lg:mx-auto px-4 justify-between h-14 max-w-screen-xl  py-1 items-center">
             <div>
                 <img src='../assets/vue.svg' class="logo" />
             </div>

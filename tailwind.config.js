@@ -28,7 +28,7 @@ export default {
         '0.75': '3px',
       },
       textColor: {
-        
+          light:'#ddd',
           dark:'#ddd'
       },
       flexGrow: {
@@ -45,8 +45,8 @@ export default {
       },
       boxShadow: {
         //'neumor': '5px 5px 14px var(--neumor-color-1),-5px -5px 14px var(--neumor-color-2)'
-        'neumor': '5px 5px 14px #8c8e8f,-5px -5px 14px #fff',
-        'neumor-dark': '5px 5px 14px #1f1f1f,-5px -5px 14px #292929'
+        'neumor': '5px 5px 10px #acacac,-5px -5px 10px #fff',
+        'neumor-dark': '5px 5px 10px #1f1f1f,-5px -5px 10px #2d2d2d'
       },
       animation: {
         effectText: 'effectText 2s linear infinite',

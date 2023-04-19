@@ -67,10 +67,10 @@ import { ref } from 'vue'
         {
             title:'Java',
             icon:'fa-brands fa-java',
-            color:'#f89820',
-            class:'border-[#f89820] drop-shadow-[0_0px_7px_#f89820] after:bg-[#f89820]',
-            shadow:'group-hover:drop-shadow-[0_0px_7px_#f89820]',
-            iconClass:'group-hover:text-[#f89820]',
+            color:'#f86620',
+            class:'border-[#f86620] drop-shadow-[0_0px_7px_#f86620] after:bg-[#f86620]',
+            shadow:'group-hover:drop-shadow-[0_0px_7px_#f86620]',
+            iconClass:'group-hover:text-[#f86620]',
             order:'order-10'
         },
         {
@@ -85,24 +85,27 @@ import { ref } from 'vue'
     ]
 </script>
 <template>
-    <section id="skill" class="lg:container mx-6 lg:mx-auto mt-5 dark:text-dark">
+    <section id="skill" class="lg:container mx-6 lg:mx-auto mt-16 dark:text-dark">
         <h1 class="text-center text-[32px] font-semibold">SKILL</h1>
-        <ul class="flex justify-center flex-wrap items-center gap-x-6 gap-y-7 m-auto w-full min-h-[300px] shadow-neumor rounded-xl
-         py-7 dark:bg-dark dark:shadow-neumor-dark">
+        <ul class="flex justify-center flex-wrap items-center gap-x-6 md:gap-x-8 gap-y-9 m-auto w-full min-h-[300px] rounded-xl
+         py-7 dark:bg-dark">
 
             <li v-for="skill in listSkill" 
             :class="skill.order"
-            class="flex flex-col relative w-[130px] justify-center items-center aspect-square bg-blue-50 group p-2 dark:bg-dark">
-                <div class="border-4 w-full h-full border-l-transparent rounded-[50%] 
+            class="flex flex-col relative w-[130px] justify-center items-center aspect-square
+             bg-blue-50 group p-2 dark:bg-dark">
+                <div class="z-10 border-4 w-full h-full border-l-transparent rounded-[50%] 
                         after:absolute after:w-4 after:h-4 after:top-3 after:rounded-[50%] 
                         rotateItem animate-spinSkew 
                         " v-bind:class="skill.class">
                 </div>
+                <div class="absolute  w-full h-2/3 bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
                 <div class="absolute rotateItem m-auto group-hover:-translate-y-16
                 transition-all">
-                    <i class=" text-[40px] text-[#444] dark:text-[#ccc]
+                    <i class=" text-[40px] text-[#444] dark:text-[#ccc] z-10
                      group-hover:text-[64px]"
-                     :class="[skill.iconClass,skill.icon]"></i>
+                     :class="[skill.iconClass,skill.icon]"
+                     ></i>
                 </div>
                 <span :style="{color:skill.color}" :class="skill.shadow"
                  class="absolute uppercase font-semibold transition-all invisible group-hover:visible group-hover:-translate-y-5">
@@ -117,10 +120,11 @@ import { ref } from 'vue'
                         rotateItem animate-spinSkew border-[#007acc] drop-shadow-[0_0px_7px_#007acc] after:bg-[#007acc]
                         ">
                 </div>
+                <div class="absolute  w-full h-2/3 bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
                 <div class="absolute rotateItem m-auto group-hover:-translate-y-16
                 transition-all">
                      <img src="https://img.icons8.com/fluency/96/null/typescript--v1.png"
-                     class="grayscale w-[48px] group-hover:w-[76px] group-hover:grayscale-0"
+                     class="grayscale w-[48px] group-hover:w-[76px] group-hover:grayscale-0  z-10"
                       />
                 </div>
                 <span class="absolute uppercase font-semibold transition-all invisible group-hover:visible
@@ -136,11 +140,12 @@ import { ref } from 'vue'
                         rotateItem animate-spinSkew border-[#4DB33D] drop-shadow-[0_0px_7px_#4DB33D] after:bg-[#4DB33D]
                         ">
                 </div>
+                <div class="absolute w-full h-2/3 bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
                 <div class="absolute rotateItem m-auto group-hover:-translate-y-16
                 transition-all">
                   
                      <img src="https://img.icons8.com/color/96/null/mongodb.png"
-                     class="grayscale w-[48px] group-hover:w-[76px] group-hover:grayscale-0"
+                     class="grayscale w-[48px] group-hover:w-[76px] group-hover:grayscale-0 z-10"
                       />
                 </div>
                 <span class="absolute uppercase font-semibold transition-all invisible group-hover:visible

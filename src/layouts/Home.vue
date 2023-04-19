@@ -9,8 +9,10 @@ import Project from '../components/Project.vue'
 <template>
     <Header>
     </Header>
-    <About></About>
-    <Skill></Skill>
-    <Project></Project>
-    <Footer></Footer>
+    <main class="lg:container mx-6 lg:mx-auto">
+        <About></About>
+        <Skill></Skill>
+        <Project></Project>
+        <Footer></Footer>
+    </main>
 </template>

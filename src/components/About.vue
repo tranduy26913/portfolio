@@ -1,5 +1,5 @@
 <template>
-    <section class="lg:container m-auto dark:text-dark dark:bg-dark">
+    <section class="dark:text-dark dark:bg-dark">
         <article class="flex p-4 flex-col md:flex-row md:items-center gap-10 md:gap-1">
             <div class="flex-1 md:flex-2 lg:flex-3 flex flex-col gap-6 pt-10 order-2 md:order-1">
                 <p>WELCOME TO MY PROFILE</p>
@@ -21,19 +21,19 @@
                     <ul class="flex gap-6 mt-2 group">
                         <li class="w-16 h-16 shadow-neumor rounded-md flex text-[#213454] hover:scale-[1.03]  dark:shadow-neumor-dark">
                             <a href="https://www.facebook.com/Tduyyyyyyyy"
-                            class="text-[#213454] m-auto ">
+                            class="text-[#213454] m-auto dark:text-[#4d86db]">
                                 <i class="fa-brands fa-facebook text-[2.5rem]"></i>
                             </a>
                         </li>
                         <li class="w-16 h-16 shadow-neumor rounded-md flex hover:scale-[1.03] dark:shadow-neumor-dark">
-                            <a href="https://www.facebook.com/Tduyyyyyyyy"
-                            class="text-[#000] m-auto">
+                            <a href="https://github.com/tranduy26913"
+                            class="text-[#000] m-auto dark:text-[#fff]">
                                 <i class="fa-brands fa-github text-[2.5rem]"></i>
                             </a>
                         </li>
                         <li class="w-16 h-16 shadow-neumor rounded-md flex  hover:scale-[1.03] dark:shadow-neumor-dark">
-                            <a href="https://www.facebook.com/Tduyyyyyyyy"
-                            class="text-[#213454] m-auto">
+                            <a href="https://www.linkedin.com/in/tranbaoduy4"
+                            class="text-[#213454] m-auto dark:text-[#4a5eb8]">
                                 <i class="fa-brands fa-linkedin text-[2.5rem]"></i>
                             </a>
                         </li>
