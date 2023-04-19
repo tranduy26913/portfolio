@@ -94,12 +94,12 @@ import { ref } from 'vue'
             :class="skill.order"
             class="flex flex-col relative w-[130px] justify-center items-center aspect-square
              bg-blue-50 group p-2 dark:bg-dark">
-                <div class="z-10 border-4 w-full h-full border-l-transparent rounded-[50%] 
-                        after:absolute after:w-4 after:h-4 after:top-3 after:rounded-[50%] 
+                <div class="z-10 border-4 w-3/4 h-3/4 border-l-transparent rounded-[50%] 
+                        after:absolute after:w-4 after:h-4 after:top-1 after:rounded-[50%] 
                         rotateItem animate-spinSkew 
                         " v-bind:class="skill.class">
                 </div>
-                <div class="absolute  w-full h-2/3 bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
+                <div class="absolute w-full h-full rotateItem bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
                 <div class="absolute rotateItem m-auto group-hover:-translate-y-16
                 transition-all">
                     <i class=" text-[40px] text-[#444] dark:text-[#ccc] z-10
@@ -115,12 +115,12 @@ import { ref } from 'vue'
 
             <li class="flex flex-col relative justify-center items-center w-[130px] order-5
              aspect-square bg-blue-50 group p-2 dark:bg-dark">
-                <div class="border-4 w-full h-full border-l-transparent rounded-[50%] 
-                        after:absolute after:w-4 after:h-4 after:top-3 after:rounded-[50%] 
+                <div class="border-4  w-3/4 h-3/4 border-l-transparent rounded-[50%] 
+                        after:absolute after:w-4 after:h-4 after:top-1 after:rounded-[50%] 
                         rotateItem animate-spinSkew border-[#007acc] drop-shadow-[0_0px_7px_#007acc] after:bg-[#007acc]
                         ">
                 </div>
-                <div class="absolute  w-full h-2/3 bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
+                <div class="absolute  w-full h-full rotateItem bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
                 <div class="absolute rotateItem m-auto group-hover:-translate-y-16
                 transition-all">
                      <img src="https://img.icons8.com/fluency/96/null/typescript--v1.png"
@@ -135,12 +135,12 @@ import { ref } from 'vue'
 
             <li class="flex flex-col relative justify-center items-center w-[130px] order-8
              aspect-square bg-blue-50 group p-2 dark:bg-dark">
-                <div class="border-4 w-full h-full border-l-transparent rounded-[50%] 
-                        after:absolute after:w-4 after:h-4 after:top-3 after:rounded-[50%] 
+                <div class="border-4  w-3/4 h-3/4 border-l-transparent rounded-[50%] 
+                        after:absolute after:w-4 after:h-4 after:top-1 after:rounded-[50%] 
                         rotateItem animate-spinSkew border-[#4DB33D] drop-shadow-[0_0px_7px_#4DB33D] after:bg-[#4DB33D]
                         ">
                 </div>
-                <div class="absolute w-full h-2/3 bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
+                <div class="absolute w-full h-full rotateItem bottom-0 shadow-neumor dark:shadow-neumor-dark rounded-[24px] z-0" ></div>
                 <div class="absolute rotateItem m-auto group-hover:-translate-y-16
                 transition-all">
                   

@@ -2,7 +2,7 @@
     <section class="dark:text-dark dark:bg-dark">
         <article class="flex p-4 flex-col md:flex-row md:items-center gap-10 md:gap-1">
             <div class="flex-1 md:flex-2 lg:flex-3 flex flex-col gap-6 pt-10 order-2 md:order-1">
-                <p>WELCOME TO MY PROFILE</p>
+                <p class="font-medium">WELCOME TO MY PROFILE</p>
                 <h1 class='text-5xl leading-snug font-semibold'>
                     Hi, I'm Tran Bao Duy
                     <br />
@@ -13,11 +13,11 @@
                        <span class="">Developer</span> 
                     </div>
                 </h1>
-                <p class="pr-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo quod eos
-                    libero, in enim, ipsam a facere eaque reiciendis dolorum, itaque eius. Quia nobis sapiente eos magnam
-                    officiis, quibusdam alias quaerat cum, veritatis vel modi reiciendis pariatur suscipit quae!</p>
+                <p class="pr-20"> 
+                    With a strength about web developer, I'm looking for Frontend developer positions in website. I'll be using the technical and problem-solving I've developed via studies and work. 
+</p>
                 <div>
-                    <p>CONTACT ME</p>
+                    <p class="font-medium">CONTACT ME</p>
                     <ul class="flex gap-6 mt-2 group">
                         <li class="w-16 h-16 shadow-neumor rounded-md flex text-[#213454] hover:scale-[1.03]  dark:shadow-neumor-dark">
                             <a href="https://www.facebook.com/Tduyyyyyyyy"
